@@ -3,7 +3,7 @@ import getClientsDniWithLandline from "./getClientsDniWithLandline";
 
 describe("Given the getClientsDniWithLandline function", () => {
   describe("When it receives a list of 2 clients", () => {
-    test("Then it returns a list with the DNIs of the received clients that have landline phone number", () => {
+    test("Then it should return a list with the DNIs of the received clients that have landline phone number", () => {
       const firstClient: ClientStructure = {
         dni: "12345678A",
         nameSurname: "",
