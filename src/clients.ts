@@ -8,7 +8,6 @@ const clients: ClientsStructure = [
     maximumSalary: 20000,
     directDebitPayroll: true,
     telephoneNumbers: {
-      landline: 923456789,
       mobile: 687654321,
     },
   },
@@ -29,7 +28,7 @@ const clients: ClientsStructure = [
     avarageSalary: 15000,
     maximumSalary: 30000,
     directDebitPayroll: true,
-    telephoneNumbers: { landline: 945678901, mobile: 609876543 },
+    telephoneNumbers: { mobile: 609876543 },
   },
   {
     dni: "23932746G",
