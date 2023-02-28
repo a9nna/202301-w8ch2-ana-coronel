@@ -13,7 +13,7 @@ const getClientsWithStablishAverageSalary = (
     )
     .map((client) => ({
       dni: client.dni,
-      nameSurnames: client.nameSurname,
+      nameSurname: client.nameSurname,
       averageBalance: client.avarageSalary,
     }));
 

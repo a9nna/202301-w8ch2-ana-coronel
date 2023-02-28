@@ -12,7 +12,7 @@ export interface ClientStructure {
 
 export interface ClientMinimumAverageSalary {
   dni: string;
-  nameSurnames: string;
+  nameSurname: string;
   averageBalance: number;
 }
 
