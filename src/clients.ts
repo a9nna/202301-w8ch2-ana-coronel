@@ -4,7 +4,7 @@ const clients: ClientsStructure = [
   {
     dni: "12345678A",
     nameSurname: "Juan Pérez",
-    avarageSalary: 10000,
+    avarageSalary: 500,
     maximumSalary: 20000,
     directDebitPayroll: true,
     telephoneNumbers: {
@@ -25,7 +25,7 @@ const clients: ClientsStructure = [
   {
     dni: "45678901C",
     nameSurname: "Luis Martín",
-    avarageSalary: 15000,
+    avarageSalary: 1000,
     maximumSalary: 30000,
     directDebitPayroll: true,
     telephoneNumbers: { mobile: 609876543 },

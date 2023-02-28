@@ -10,4 +10,11 @@ export interface ClientStructure {
   };
 }
 
+export interface ClientMinimumAverageSalary {
+  dni: string;
+  nameSurnames: string;
+  averageBalance: number;
+}
+
+export type ClientsMinimumAverageSalary = ClientMinimumAverageSalary[];
 export type ClientsStructure = ClientStructure[];
