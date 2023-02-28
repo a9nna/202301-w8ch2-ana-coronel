@@ -8,7 +8,7 @@ import getClientsWithStablishAverageSalary from "./getClientsWithStablishAverage
 describe("Given the getClientsWithStablishAverageSalary function", () => {
   describe("When it receives a list of 2 clients and a minimum average salary of 2000€", () => {
     test("Then it should return the clients of the received list that have a direct debit payroll and a average salary less than received", () => {
-      const minimumAvarageSalary = 1000;
+      const minimumAvarageSalary = 2000;
       const firstClient: ClientStructure = {
         dni: "12345678A",
         nameSurname: "Juan Pérez",
