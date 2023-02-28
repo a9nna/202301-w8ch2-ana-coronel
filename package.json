@@ -2,9 +2,10 @@
   "name": "saldos",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "type": "module",
   "scripts": {
-    "build": "nox tsc",
+    "build": "npx tsc",
     "build:dev": "npx tsc -w",
     "test": "npx jest --passWithNoTests",
     "test:dev": "npx jest --watchAll --passWithNoTests",

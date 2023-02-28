@@ -5,7 +5,7 @@ export interface ClientStructure {
   maximumSalary: number;
   directDebitPayroll: boolean;
   telephoneNumbers: {
-    landline: number;
+    landline?: number;
     mobile: number;
   };
 }

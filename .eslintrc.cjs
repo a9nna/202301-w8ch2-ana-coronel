@@ -11,10 +11,7 @@ module.exports = {
       extends: ["xo-typescript", "prettier"],
       files: ["*.ts", "*.tsx"],
       rules: {
-        "@typescript-eslint/consistent-type-definitions": [
-          "warn",
-          "interface",
-        ],
+        "@typescript-eslint/consistent-type-definitions": ["warn", "interface"],
       },
     },
   ],
