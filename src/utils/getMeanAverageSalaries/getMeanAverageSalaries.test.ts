@@ -1,7 +1,7 @@
 import {
   type ClientsStructure,
   type ClientStructure,
-  type ClientMinimumAverageSalary,
+  type ClientWithAverageBalance,
   type ClientsMinimumAverageSalary,
 } from "../../types";
 import getClientsWithStablishAverageSalary from "../getClientsWithStablishAverageSalary/getClientsWithStablishAverageSalary";
@@ -11,12 +11,12 @@ describe("Given the getMeanAverageSalaries function", () => {
   describe("When it receives a list of 2 clients", () => {
     test("Then it should return the mean of all average balances obtained", () => {
       const expectedMean = 750;
-      const firstClient: ClientMinimumAverageSalary = {
+      const firstClient: ClientWithAverageBalance = {
         dni: "12345678A",
         nameSurname: "Juan Pérez",
         averageBalance: 500,
       };
-      const secondClient: ClientMinimumAverageSalary = {
+      const secondClient: ClientWithAverageBalance = {
         dni: "45678901C",
         nameSurname: "Luis Martín",
         averageBalance: 1000,
@@ -62,7 +62,7 @@ describe("Given the getMeanAverageSalaries function", () => {
         clientsToMakeMeanOfAverageSalaries
       );
 
-      expect(obtainedMean).toBe(expectedMean);
+      expect(obtainedMean).toEqual(expectedMean);
     });
   });
 });
