@@ -10,11 +10,13 @@ export interface ClientStructure {
   };
 }
 
-export interface ClientMinimumAverageSalary {
+export interface ClientWithAverageBalance {
   dni: string;
   nameSurname: string;
   averageBalance: number;
 }
 
-export type ClientsMinimumAverageSalary = ClientMinimumAverageSalary[];
+type Coso = Pick<ClientStructure, "dni" | "nameSurname" | "avarageSalary">;
+
+export type ClientsMinimumAverageSalary = ClientWithAverageBalance[];
 export type ClientsStructure = ClientStructure[];

@@ -11,10 +11,10 @@ const getClientsWithStablishAverageSalary = (
     .filter(
       (client) => client.directDebitPayroll && client.avarageSalary < salary
     )
-    .map((client) => ({
-      dni: client.dni,
-      nameSurname: client.nameSurname,
-      averageBalance: client.avarageSalary,
+    .map(({ dni, avarageSalary, nameSurname }) => ({
+      dni,
+      nameSurname,
+      averageBalance: avarageSalary,
     }));
 
 export default getClientsWithStablishAverageSalary;

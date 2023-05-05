@@ -27,7 +27,7 @@ describe("Given the getClientsDniWithLandline function", () => {
       };
       const clients: ClientsStructure = [firstClient, secondClient];
 
-      const expectedDnis = ["87654321B"];
+      const expectedDnis = [secondClient.dni];
 
       const dnis = getClientsDniWithLandline(clients);
 

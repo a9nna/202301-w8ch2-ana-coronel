@@ -9,7 +9,7 @@ describe("Given the getClientsWithStablishAverageSalary function", () => {
   describe("When it receives a list of 2 clients and a minimum average salary of 2000€", () => {
     test("Then it should return the clients of the received list that have a direct debit payroll and a average salary less than received", () => {
       const minimumAvarageSalary = 2000;
-      const firstClient: ClientStructure = {
+      const juan: ClientStructure = {
         dni: "12345678A",
         nameSurname: "Juan Pérez",
         avarageSalary: 500,
@@ -19,7 +19,7 @@ describe("Given the getClientsWithStablishAverageSalary function", () => {
           mobile: 687654321,
         },
       };
-      const secondClient: ClientStructure = {
+      const ana: ClientStructure = {
         dni: "87654321B",
         nameSurname: "Ana García",
         avarageSalary: 5000,
@@ -30,12 +30,13 @@ describe("Given the getClientsWithStablishAverageSalary function", () => {
           mobile: 698765432,
         },
       };
-      const clients: ClientsStructure = [firstClient, secondClient];
+
+      const clients: ClientsStructure = [juan, ana];
       const expectedClients: ClientsMinimumAverageSalary = [
         {
-          dni: "12345678A",
-          nameSurname: "Juan Pérez",
-          averageBalance: 500,
+          dni: juan.dni,
+          nameSurname: juan.nameSurname,
+          averageBalance: juan.avarageSalary,
         },
       ];
 
